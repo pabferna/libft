@@ -43,7 +43,7 @@ int	ft_atoi(const char *nptr)
 
 int main()
 {
-    char str[] = "1 2a3v4!5";
+    char str[] = "-12345";
     printf("%d\n", ft_atoi(str));
     printf("%d\n", atoi(str));
 	return 0;

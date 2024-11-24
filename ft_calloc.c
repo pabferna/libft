@@ -21,10 +21,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		ft_bzero(src, nmemb * size);
 	return (src);
 }
-int main()
-{
-	size_t nmemb = 4;
-	size_t size = 3;
-	printf("%p\n", ft_calloc(nmemb, size));
-	printf("%p\n", calloc(nmemb, size));
-}
