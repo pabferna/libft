@@ -53,5 +53,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
+typedef struct t_list {
+	int count; // Este es el valor que guarda el nodo
+	t_list *next; // Apunta al siguiente nodo
+} t_list;
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
 
 #endif

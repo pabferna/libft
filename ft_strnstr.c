@@ -38,12 +38,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-/*int main(void)
+int main(void)
 {
-	const char big[] = "pabloma3jriaank" ;
-	const char little[] = "k";
+	const char big[] = " " ;
+	const char little[] = "hola";
 	size_t len = 20;
 	printf("%s\n", ft_strnstr(big, little, len));
-	printf("%s\n", strnstr(big, little, len));
+	// printf("%s\n", strnstr(big, little, len));
 	return(0);
-}*/
+}

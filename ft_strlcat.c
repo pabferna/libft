@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pablo <pablo@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pabferna <pabferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 17:58:47 by marvin            #+#    #+#             */
-/*   Updated: 2024/05/17 00:13:47 by pablo            ###   ########.fr       */
+/*   Updated: 2024/10/19 18:40:39 by pabferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	dst[i + j] = '\0';
 	return (srcsize);
-}
-int main(){
-	char dst[20] = "ana,";
-	printf("%ld", ft_strlcat(dst, "love you", 15));
-	return (0);
 }
